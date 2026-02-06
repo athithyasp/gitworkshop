@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Mastery with Gemini</title>
+    <style>
+        :root {
+            --java-orange: #f89820;
+            --java-blue: #5382a1;
+            --dark-bg: #23272e;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            display: flex;
+        }
+        nav {
+            width: 250px;
+            background: var(--dark-bg);
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+        }
+        main {
+            margin-left: 290px;
+            padding: 40px;
+            max-width: 800px;
+        }
+        .code-block {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Consolas', monospace;
+            overflow-x: auto;
+            border-left: 5px solid var(--java-orange);
+        }
+        .keyword { color: #c678dd; }
+        .class-name { color: #e5c07b; }
+        .string { color: #98c379; }
+        .badge {
+            background: var(--java-blue);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>☕ Java Docs</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li><a href="#" style="color: var(--java-orange); text-decoration: none;">1. Introduction</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">2. Variables</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">3. OOP Principles</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <span class="badge">Version: JDK 21</span>
+            <h1>Getting Started with Java</h1>
+            <p>Welcome to the tutorial! Today is <%= new Date().toLocaleDateString() %> — a perfect day to code.</p>
+        </header>
+
+        <section>
+            <h3>The Classic "Hello World"</h3>
+            <p>In Java, every line of code that can be executed must be inside a <strong>class</strong>.</p>
+            
+            <div class="code-block">
+                <pre>
+<span class="keyword">public class</span> <span class="class-name">Main</span> {
+    <span class="keyword">public static void</span> main(String[] args) {
+        System.out.println(<span class="string">"Hello, Gemini!"</span>);
+    }
+}</pre>
+            </div>
+        </section>
+
+        <section style="margin-top: 40px;">
+            <h3>Quick Tip</h3>
+            <blockquote>
+                Java is <strong>statically typed</strong>, meaning you must declare the type of a variable when you create it.
+            </blockquote>
+        </section>
+    </main>
+
+</body>
+</html>
